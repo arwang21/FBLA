@@ -21,7 +21,9 @@ Fly High Airlines is a new discount airline serving the Tristate area. Use our w
 * [Javascript - version ?.?]
  
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+Describe how to install / setup your local environment / add link to demo version.
+i.e. Open the following on Chrome, Safari, or any other web browser. 
+     Link: https://insertlinkhere.com
  
 ## Code Examples
 Show examples of usage:
@@ -29,21 +31,18 @@ Show examples of usage:
  
 ## Features
 List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* None so far
  
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Check Flight Schedules
+* Book Flights
+* Frequent Flyer Program Information
+* Job Application
+* Social Media Links
  
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
- 
-## Inspiration
-Add here credits. Project inspired by..., based on...
+Project is: _in progress_
  
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
- 
+Created by Amanda Wang and Shreshta Kethireddy. 
  
