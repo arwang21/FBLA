@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="FBLA Web Design" content = "Fly High Airlines">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Flight Schedules</title>
+        <link href = "main.css" rel = "stylesheet">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez">
+    </head>
+    <main>
+        <header>
+            <img  alt = “logo” id = "logo" src = "C:\Users\pagarwal21\github\2. logo.png">
+            <div>
+              <nav class = "stick">
+                <a class="noul" href="index.html">Home</a>
+                <a class="noul" href="FlightSchedule.html">Flight Schedules</a>
+                <a class="noul" href="#BookFlights">Book Flights</a>
+                <a class="noul" href="#FrequentFlyer">Frequent Flyer Program</a>
+                <a class="noul" href="#Job Application">Apply Now!</a>
+                <a class="noul" href="#Contact">Contact</a>
+              </nav>
+            </div>
+          </header>
+        <body>
+          <div>
+            <h1>Flight Schedules</h1>
+            <h2 class = "center"> <i>We get you places.</i></h2>
+
+          </div>
+          <div id = "Flight Schedules">
+            <h2 class = "center">Flight Schedules</h2>
+            <p>Fly between any airports in the Tri-State area for prices starting from $50.</p>
+          </div>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">From</label>
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">Queens, NY (JFK)</option>
+                    <option value="2">Newark, NJ (EWR)</option>
+                    <option value="3">Queens, NY (LGA)</option>
+                    <option value="4">Philadelphia, PA (PHL)</option>
+                    <option value="5">Atlantic City, NJ (ACY)</option>
+                    <option value="6">Pittsburgh, PA (PIT)</option>
+                    <option value="7">Harrisburg, PA (MDT)</option>
+                    <option value="8">Hartford, CT (BDL)</option>
+                    <option value="9">Albany, NY (ALB)</option>
+                    <option value="10">Syracuse, NY (SYR)</option>
+                    <option value="11">Lehigh County, PA (ABE)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">To</label>
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">Queens, NY (JFK)</option>
+                    <option value="2">Newark, NJ (EWR)</option>
+                    <option value="3">Queens, NY (LGA)</option>
+                    <option value="4">Philadelphia, PA (PHL)</option>
+                    <option value="5">Atlantic City, NJ (ACY)</option>
+                    <option value="6">Pittsburgh, PA (PIT)</option>
+                    <option value="7">Harrisburg, PA (MDT)</option>
+                    <option value="8">Hartford, CT (BDL)</option>
+                    <option value="9">Albany, NY (ALB)</option>
+                    <option value="10">Syracuse, NY (SYR)</option>
+                    <option value="11">Lehigh County, PA (ABE)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Date of Departure</label>
+                  </div>
+                  <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                </div>
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your date of departure must be greater than or equal to today's date.
+                </small>
+              </div>
+              <div class="col">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Date of Arrival</label>
+                  </div>
+                  <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                </div>
+              </div>
+            </div>
+          </form>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        </body>
+        <footer>
+            <a href = "https://twitter.com/?lang=en"> <img alt = “Twitter” src = https://mobiledevmemo.com/wp-content/uploads/2014/05/Twitter-Bird.png height="23" width ="25"> </a>
+            <a href = "https://www.facebook.com/"> <img alt=”Facebook” src = https://2.bp.blogspot.com/-tvmgENfHanM/U-kriCleTNI/AAAAAAAABvs/Yb5VeHaIgPU/s1600/facebook+logo+vector.png height="25" width="25"> </a>
+            <p> COPYRIGHT 2019 by Fly High Airlines, Inc.</p>
+        </footer>
+    </main>
+</html>
