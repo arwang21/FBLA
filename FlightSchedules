@@ -1,3 +1,4 @@
+<!-- more links? Home, Products, all of the contact links, ap is a trademark…, -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +11,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez">
     </head>
     <main>
-        <header>
             <img  alt = “logo” id = "logo" src = "C:\Users\pagarwal21\github\2. logo.png">
             <div>
               <nav class = "stick">
@@ -22,16 +22,14 @@
                 <a class="noul" href="#Contact">Contact</a>
               </nav>
             </div>
-          </header>
         <body>
           <div>
             <h1>Flight Schedules</h1>
-            <h2 class = "center"> <i>We get you places.</i></h2>
+            <h2 class = "center"> <i>We'll get you places.</i></h2>
 
           </div>
           <div id = "Flight Schedules">
-            <h2 class = "center">Flight Schedules</h2>
-            <p>Fly between any airports in the Tri-State area for prices starting from $50.</p>
+            <h2 class = "center">Fly between any airports in the Tri-State area for prices starting from $50.</h2>
           </div>
           <form class="needs-validation" novalidate>
             <div class="row">
@@ -99,7 +97,38 @@
                 </div>
               </div>
             </div>
+            <button class="btn btn-primary" type="submit" onclick="showFlights()">Submit</button>
+            <div class="list-group list-group-flush" id="Flights">
+              <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+            </div>
           </form>
+          <script> 
+            function showFlights() {
+              var x = document.getElementById("Flights");
+              x.style.display = "block";
+            }
+            // JavaScript for disabling form submissions if there are invalid fields
+          //  (function() {
+           //   'use strict';
+            //  window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              //  var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+            //    var validation = Array.prototype.filter.call(forms, function(form) {
+              //    form.addEventListener('submit', function(event) {
+                //    if (form.checkValidity() === false) {
+                  //    event.preventDefault();
+                    //  event.stopPropagation();
+                //    }
+              //      form.classList.add('was-validated');
+                //  }, false);
+            //    });
+            //  }, false);
+          //  })();
+          </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
