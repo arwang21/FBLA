@@ -1,0 +1,120 @@
+body{
+    background-color: #EBEFF4;
+    font-size: 100%;
+}
+
+nav{
+    text-align: right;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    background-color: #7F8089;
+    font-size: 1.3em;
+    padding: 30px 0px;
+    width: 100%;
+    clear: right;
+    display: block;
+    top: 0px;
+}
+
+nav a:hover{
+  color: #153050;
+}
+
+h1{
+    width: 100%;
+    color: #EBEFF4;
+    text-align: center;
+    background-color: #68B7CE;
+    font-size: 5vw;
+    display: block;
+}
+
+h2{
+  color: #28699F;
+}
+
+h3{
+  display: block;
+}
+
+p{
+    color: #153050;
+}
+
+#about{
+  display:
+}
+
+button{
+    background-color: #7F8089;
+    padding: 25px;
+    display: block;
+}
+
+button a:hover{
+  color:#EBEFF4;
+}
+
+.center{
+    text-align: center;
+}
+
+#copyright{
+    text-align: center;
+
+}
+
+#mainpic{
+    max-width: 100%;
+    height: auto;
+}
+
+#logo{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+    height: 80px;
+    width: auto;
+}
+
+.cd{
+  float:right;
+}
+
+
+#stick{
+  position: sticky;
+  top:0px;
+}
+
+#gray{
+  color: #EBEFF4;
+  clear:both;
+  background-color: #68B7CE;
+}
+
+.right{
+  float: right;
+}
+
+.destination{
+  font-size: 1.5em;
+}
+
+.left{
+  float: left;
+}
+
+.inline{
+  display: inline;
+}
+
+*{
+font-family: 'Sanchez', sans-serif;
+}
+
+a.noul{
+    text-decoration: none;
+    color: #EBEFF4;
+
+}
