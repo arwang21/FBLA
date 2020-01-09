@@ -38,8 +38,8 @@
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">From</label>
                   </div>
-                  <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Choose...</option>
+                  <select class="custom-select" id="inputGroupSelect01" required>
+                    <option value="">Choose...</option>
                     <option value="1">Queens, NY (JFK)</option>
                     <option value="2">Newark, NJ (EWR)</option>
                     <option value="3">Queens, NY (LGA)</option>
@@ -52,6 +52,7 @@
                     <option value="10">Syracuse, NY (SYR)</option>
                     <option value="11">Lehigh County, PA (ABE)</option>
                   </select>
+                  <div class="invalid-feedback">Please choose an airport.</div>
                 </div>
               </div>
               <div class="col">
@@ -59,8 +60,8 @@
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">To</label>
                   </div>
-                  <select class="custom-select" id="inputGroupSelect01">
-                    <option selected>Choose...</option>
+                  <select class="custom-select" id="inputGroupSelect01" required>
+                    <option value="">Choose...</option>
                     <option value="1">Queens, NY (JFK)</option>
                     <option value="2">Newark, NJ (EWR)</option>
                     <option value="3">Queens, NY (LGA)</option>
@@ -73,6 +74,7 @@
                     <option value="10">Syracuse, NY (SYR)</option>
                     <option value="11">Lehigh County, PA (ABE)</option>
                   </select>
+                  <div class="invalid-feedback">Please choose an airport.</div>
                 </div>
               </div>
             </div>
@@ -82,7 +84,8 @@
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">Date of Departure</label>
                   </div>
-                  <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                  <input type="text" class="form-control" placeholder="MM/DD/YYYY" required>
+                  <div class="invalid-feedback">Please enter a date.</div>
                 </div>
                 <small id="passwordHelpBlock" class="form-text text-muted">
                   Your date of departure must be greater than or equal to today's date.
@@ -93,12 +96,13 @@
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">Date of Arrival</label>
                   </div>
-                  <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                  <input type="text" class="form-control" placeholder="MM/DD/YYYY" required>
+                  <div class="invalid-feedback">Please enter a date.</div>
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary" type="submit" onclick="showFlights()">Submit</button>
-            <div class="list-group list-group-flush" id="Flights">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <div class="list-group list-group-flush" onload="hide()" id="Flights">
               <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
               <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
               <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
@@ -106,28 +110,29 @@
             </div>
           </form>
           <script> 
-            function showFlights() {
-              var x = document.getElementById("Flights");
-              x.style.display = "block";
-            }
+            (hide())
             // JavaScript for disabling form submissions if there are invalid fields
-          //  (function() {
-           //   'use strict';
-            //  window.addEventListener('load', function() {
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              //  var forms = document.getElementsByClassName('needs-validation');
+                var forms = document.getElementsByClassName('needs-validation');
                 // Loop over them and prevent submission
-            //    var validation = Array.prototype.filter.call(forms, function(form) {
-              //    form.addEventListener('submit', function(event) {
-                //    if (form.checkValidity() === false) {
-                  //    event.preventDefault();
-                    //  event.stopPropagation();
-                //    }
-              //      form.classList.add('was-validated');
-                //  }, false);
-            //    });
-            //  }, false);
-          //  })();
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    else {
+                      var x = document.getElementById("Flights");
+                      x.style.display = "block";
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
           </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
