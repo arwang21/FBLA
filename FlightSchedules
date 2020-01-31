@@ -84,7 +84,7 @@
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">Date of Departure</label>
                   </div>
-                  <input type="text" class="form-control" placeholder="MM/DD/YYYY" required>
+                  <input id="datefield1" type="date" class="form-control" min="2020-03-17" required>
                   <div class="invalid-feedback">Please enter a date.</div>
                 </div>
                 <small id="passwordHelpBlock" class="form-text text-muted">
@@ -96,9 +96,12 @@
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">Date of Arrival</label>
                   </div>
-                  <input type="text" class="form-control" placeholder="MM/DD/YYYY" required>
+                  <input id="datefield2" type="date" class="form-control" min="2020-03-17" required>
                   <div class="invalid-feedback">Please enter a date.</div>
                 </div>
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your date of arrival must be greater than or equal to today's date.
+                </small>
               </div>
             </div>
             <button class="btn btn-primary" type="submit">Submit</button>
@@ -109,18 +112,17 @@
               <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
             </div>
           </form>
-          <script> 
+          <script>
             (hide())
             // JavaScript for disabling form submissions if there are invalid fields
             (function() {
               'use strict';
-              window.addEventListener('load', function() {
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
                 var forms = document.getElementsByClassName('needs-validation');
                 // Loop over them and prevent submission
                 var validation = Array.prototype.filter.call(forms, function(form) {
                   form.addEventListener('submit', function(event) {
-                    if (form.checkValidity() === false) {
+                    if (form.checkValidity() == false) {
                       event.preventDefault();
                       event.stopPropagation();
                     }
@@ -129,10 +131,29 @@
                       x.style.display = "block";
                     }
                     form.classList.add('was-validated');
-                  }, false);
                 });
-              }, false);
-            })();
+            
+            function CurrentDate(){
+              window.addEventListener('load', setDate(){
+              var today = new Date();
+              var dd = today.getDate();
+              var mm = today.getMonth()+1; //January is 0!
+              var yyyy = today.getFullYear();
+
+              if(dd<10) {
+                dd = '0'+dd
+              }
+
+              if(mm<10) {
+                mm = '0'+mm
+              }
+
+            var today = yyyy+'-'+mm+'-'+dd;
+            document.getElementById("datefield1").setAttribute("min", today);
+            document.getElementById("datefield2").setAttribute("min", today);
+          }, false);
+        }
+          
           </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
