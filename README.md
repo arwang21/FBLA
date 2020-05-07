@@ -42,8 +42,7 @@ Future development:
 * Provide member testimonials on frequent flyer page
  
 ## Compatibility
-Site is completely functional on Chrome, Internet Explorer, and Firefox. 
-![Firefox Home](./FBLA/FirefoxHome.PNG)
+Site is completely functional on Chrome, Internet Explorer, and Firefox.
 
 ## Status
 Project is: _complete_
