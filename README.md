@@ -26,14 +26,14 @@ Fly High Airlines is a new discount airline serving the Northeastern area. Use o
 * https://www.shutterstock.com/image-photo/suitcases-airport-departure-lounge-airplane-background-450980248
  
 ## Features
-List of features ready and TODOs for future development
+List of features:
 * Original airline name, logo, and slogan
 * Appealing home page involving multimedia content and interactive elements
 * Easy-to-use flight booking page, with customized form validation and appropriate help text
 * Simple frequent flyer page, includes basic signup to join
 * Compact job application page, includes basin signup to apply
  
-To-do list:
+Future development:
 * Create a sort by price and duration for flight booking
 * Option for direct flight or layover flight
 * Extend job application form to be job-specific
