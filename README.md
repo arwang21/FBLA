@@ -6,6 +6,7 @@ Made for FBLA 2020, Website Design.
 * [Technologies](#technologies)
 * [Copyrighted material](#copyrighted-material)
 * [Features](#features)
+* [Compatibility](#compatibility)
 * [Contact](#contact)
  
 ## General info
@@ -40,6 +41,9 @@ Future development:
 * Pair job-specific tabs with corresponding form to streamline application
 * Provide member testimonials on frequent flyer page
  
+## Compatibility
+Site is completely functional on Chrome, Internet Explorer, and Firefox. 
+
 ## Status
 Project is: _complete_
  
