@@ -4,7 +4,7 @@ Made for FBLA 2020, Website Design.
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Copyrighted Material](#copyrighted material)
+* [Copyrighted material](#copyrighted-material)
 * [Features](#features)
 * [Contact](#contact)
  
@@ -17,10 +17,10 @@ Fly High Airlines is a new discount airline serving the Northeastern area. Use o
 * Javascript - version 7.0
 * Bootstrap CSS/Javascript library - version 4.4.1
  
-## Copyrighted Material
+## Copyrighted material
 * https://www.vectorstock.com/royalty-free-vector/aviation-icons-set-airline-graphic-vector-20101274
 * https://www.istockphoto.com/photo/airliner-flying-past-the-sun-in-blue-sky-gm537741795-57975144
-* https://www.gettyimages.com/detail/photo/passenger-airplane-flying-above-clouds-during-royalty-free-image/155439315?   adppopup=true
+* https://www.gettyimages.com/detail/photo/passenger-airplane-flying-above-clouds-during-royalty-free-image/155439315?adppopup=true
 * https://www.traveller.com.au/best-first-class-airline-seats-and-suites-but-the-class-is-dying-out-gzmbwl
 * https://blog.aviationjobsearch.com/cabin-crew-interview-questions-and-answers/
 * https://www.shutterstock.com/image-photo/suitcases-airport-departure-lounge-airplane-background-450980248
