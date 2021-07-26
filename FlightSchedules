@@ -1,147 +1,792 @@
-<!-- more links? Home, Products, all of the contact links, ap is a trademark…, -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="FBLA Web Design" content = "Fly High Airlines">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Flight Schedules</title>
-        <link href = "main.css" rel = "stylesheet">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez">
-    </head>
-    <main>
-            <img  alt = “logo” id = "logo" src = "C:\Users\pagarwal21\github\2. logo.png">
-            <div>
-              <nav class = "stick">
-                <a class="noul" href="index.html">Home</a>
-                <a class="noul" href="FlightSchedule.html">Flight Schedules</a>
-                <a class="noul" href="#BookFlights">Book Flights</a>
-                <a class="noul" href="#FrequentFlyer">Frequent Flyer Program</a>
-                <a class="noul" href="#Job Application">Apply Now!</a>
-                <a class="noul" href="#Contact">Contact</a>
-              </nav>
-            </div>
-        <body>
-          <div>
-            <h1>Flight Schedules</h1>
-            <h2 class = "center"> <i>We'll get you places.</i></h2>
+   <head>
+       <meta charset="utf-8">
+    <meta name="FBLA Web Design" content="Fly High Airlines">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flight Schedules</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+      #f1,#f2,#f3 {
+        display: none;
+      }
+      #FlightTable {
+        display: none;
+      }
+      .hide {
+        visibility: hidden;
+      }
+      .right {
+        align: right;
+      }
+	</style>
+   </head>
+   
+<main>
+   <table id=FlightTable>
+<tr>
+    <th>depDate</th>
+    <th>depAir</th>
+    <th>arrAir</th>
+    <th>depTime</th>
+    <th>arrTime</th>
+</tr>
+<tr>
+    <td>2020-05-28</td>
+    <td>JFK</td>
+    <td>PIT</td>
+    <td>7:23</td>
+    <td>8:02</td>
+</tr>
+<tr>
+    <td>2020-05-28</td>
+    <td>JFK</td>
+    <td>PIT</td>
+    <td>9:54</td>
+    <td>10:42</td>
+</tr>
+<tr>
+    <td>2020-05-28</td>
+    <td>JFK</td>
+    <td>PIT</td>
+    <td>11:54</td>
+    <td>12:42</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>JFK</td>
+    <td>EWR</td>
+    <td>13:53</td>
+    <td>15:02</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>PIT</td>
+    <td>EWR</td>
+    <td>11:51</td>
+    <td>12:35</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>PIT</td>
+    <td>ERW</td>
+    <td>10:35</td>
+    <td>11:10</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>PIT</td>
+    <td>EWR</td>
+    <td>7:43</td>
+    <td>10:52</td>
+</tr>
 
+<tr>
+    <td>2020-05-07</td>
+    <td>DCA</td>
+    <td>PHL</td>
+    <td>7:53</td>
+    <td>9:05</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>PHL</td>
+    <td>BOS</td>
+    <td>12:35</td>
+    <td>13:05</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>LGA</td>
+    <td>PIT</td>
+    <td>14:35</td>
+    <td>16:05</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>EWR</td>
+    <td>BOS</td>
+    <td>9:15</td>
+    <td>11:20</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>EWR</td>
+    <td>BOS</td>
+    <td>18:53</td>
+    <td>20:08</td>
+</tr>
+<tr>
+    <td>2020-05-07</td>
+    <td>DCA</td>
+    <td>JFK</td>
+    <td>13:26</td>
+    <td>14:08</td>
+</tr>
+<tr>
+    <td>2020-05-11</td>
+    <td>JFK</td>
+    <td>DCA</td>
+    <td>7:23</td>
+    <td>10:02</td>
+</tr>
+<tr>
+    <td>2020-05-11</td>
+    <td>JFK</td>
+    <td>DCA</td>
+    <td>13:53</td>
+    <td>15:02</td>
+</tr>
+<tr>
+    <td>2020-05-31</td>
+    <td>PIT</td>
+    <td>JFK</td>
+    <td>14:35</td>
+    <td>15:05</td>
+</tr>
+<tr>
+    <td>2020-05-31</td>
+    <td>PIT</td>
+    <td>JFK</td>
+    <td>7:43</td>
+    <td>8:52</td>
+</tr>
+<tr>
+    <td>2020-05-11</td>
+    <td>JFK</td>
+    <td>PHL</td>
+    <td>7:53</td>
+    <td>11:05</td>
+</tr>
+<tr>
+    <td>2020-05-11</td>
+    <td>PHL</td>
+    <td>JFK</td>
+    <td>12:35</td>
+    <td>13:05</td>
+</tr>
+<tr>
+    <td>2020-05-31</td>
+    <td>DCA</td>
+    <td>JFK</td>
+    <td>9:15</td>
+    <td>11:20</td>
+</tr>
+<tr>
+    <td>2020-05-11</td>
+    <td>DCA</td>
+    <td>JFK</td>
+    <td>18:53</td>
+    <td>20:08</td>
+</tr>
+</table>
+    <nav class="nav justify-content-end nav-pills" style="margin-left:-9vw; margin-right:-9vw">
+		<img alt=“logo” id="logo" src="FBLAlogo.png">
+		<p id="brand">FLY HIGH!</p>
+		<a class="nav-link" href="index.html">HOME</a>
+		<a class="nav-link" href="FlightSchedule.html">FLIGHT SCHEDULES</a>
+		<a class="nav-link" href="FrequentFlyer.html">FREQUENT FLYER</a>
+		<a class="nav-link" href="appy.html">APPLY</a>
+		<a href="https://twitter.com/?lang=en"> <img alt=“Twitter” src=http://getdrawings.com/vectors/white-twitter-logo-vector-25.png height="35" width="35" style="vertical-align: -20px;"> </a>
+		<a href="https://www.facebook.com/"> <img alt=”Facebook” src=https://webstockreview.net/images/white-facebook-icon-png-4.png height="25" width="25" style="vertical-align: -10px;"> </a>
+	</nav>
+       <body onload="CurrentDate()" id="parent" style="margin-top:150px; margin-left:9vw; margin-right:9vw">
+<!--title & sub---------------------------------->    
+		 <div class="head-container" style="position:relative; margin-left:15vw">
+            <h1>Flight Schedules</h1>
+            <p style="font-size:1.5rem; margin-left:4vw"> <i>Book a flight between any airports in the Northeast!</i></p>
           </div>
-          <div id = "Flight Schedules">
-            <h2 class = "center">Fly between any airports in the Tri-State area for prices starting from $50.</h2>
-          </div>
-          <form class="needs-validation" novalidate>
+<!--collapse controls---------------------------->
+<p class="tabs" style="margin-left: 15vw; margin-top: 5vh;">
+  <button class="btn btn-info" type="button" data-toggle="collapse" data-parent="#parent" data-target="#bookBox" aria-expanded="true" aria-controls="bookBox" style="margin-right:1.3vw">
+    Book
+  </button>
+  <button class="btn btn-warning" type="button" data-toggle="collapse" data-parent="#parent" data-target="#yourFlight" aria-expanded="false" aria-controls="yourFlight" style="margin-right:1.3vw">
+    Your Flight
+  </button>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-parent="#parent" data-target="#billing" aria-expanded="false" aria-controls="billing" style="margin-right:1.3vw">
+    Billing
+  </button>
+</p>
+<!--booking form--------------------------------->
+	  <div class="book-container collapse" id="bookBox" style="position:relative; margin-left:15vw; width:55vw; margin-top:-2.5vh; height:70vh;">
+		<div class="book" style="margin-left:0vw; width:55vw; margin-top:0vh; height:52vh; background-color:#cce2e8">
+          <form class="needs-validation" style="position:absolute; margin-top:7vh; margin-left:8vw; margin-right:8vw" novalidate>
+            <div class="row">
+			 <div class="col">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="RoundTrip" onclick="roundTrip()" checked>
+                  <label class="form-check-label" for="RoundTrip">Round Trip</label>
+                </div>
+              </div>
+			  <div class="col">
+			    <div class="input-group mb-3" id="NP">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Passengers</label>
+                  </div>
+                  <select class="custom-select" id="NumPass" required>
+                    <option value="1" name="1">1</option>
+                    <option value="2" name="2">2</option>
+				    <option value="3" name="3">3</option>
+                    <option value="4" name="4">4</option>
+				    <option value="5" name="5">5</option>
+                    <option value="6" name="6">6</option>
+				    <option value="7" name="7">7</option>
+                    <option value="8" name="8">8</option>
+				    <option value="9" name="9">9</option>
+                  </select>
+			    </div>
+			  </div>
+            </div>
             <div class="row">
               <div class="col">
-                <div class="input-group mb-3">
+                <small class="hide" id="err1" style="color:#fdb302">
+                  <b>Please provide a valid airport.</b>
+                </small>
+                <div class="input-group mb-3" id="DA">
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">From</label>
                   </div>
-                  <select class="custom-select" id="inputGroupSelect01" required>
-                    <option value="">Choose...</option>
-                    <option value="1">Queens, NY (JFK)</option>
-                    <option value="2">Newark, NJ (EWR)</option>
-                    <option value="3">Queens, NY (LGA)</option>
-                    <option value="4">Philadelphia, PA (PHL)</option>
-                    <option value="5">Atlantic City, NJ (ACY)</option>
-                    <option value="6">Pittsburgh, PA (PIT)</option>
-                    <option value="7">Harrisburg, PA (MDT)</option>
-                    <option value="8">Hartford, CT (BDL)</option>
-                    <option value="9">Albany, NY (ALB)</option>
-                    <option value="10">Syracuse, NY (SYR)</option>
-                    <option value="11">Lehigh County, PA (ABE)</option>
+                  <select class="custom-select" id="DepartureAirport" required>
+                    <option value="" name=0>Choose...</option>
+                    <option value="JFK" name="Queens">Queens, NY (JFK)</option>
+                    <option value="EWR" name="Newark">Newark, NJ (EWR)</option>
+                    <option value="PHL" name="Philadelphia">Philadelphia, PA (PHL)</option>
+                    <option value="ACY" name="Atlantic City">Atlantic City, NJ (ACY)</option>
+                    <option value="DCA" name="DC">Washington, DC (DCA)</option>
+					<option value="BOS" name="Boston">Boston, MA (BOS)</option>
+                    <option value="PIT" name="Pittsburgh">Pittsburgh, PA (PIT)</option>
+                    <option value="BDL" name="Hartford">Hartford, CT (BDL)</option>
+                    <option value="ALB" name="Albany">Albany, NY (ALB)</option>
                   </select>
-                  <div class="invalid-feedback">Please choose an airport.</div>
-                </div>
+				</div>
               </div>
               <div class="col">
-                <div class="input-group mb-3">
+                <small class="hide" id="err2" style="color:#fdb302">
+                 <b>Please provide a valid airport.</b>
+                </small>
+                <div class="input-group mb-3" id=AA>
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">To</label>
                   </div>
-                  <select class="custom-select" id="inputGroupSelect01" required>
-                    <option value="">Choose...</option>
-                    <option value="1">Queens, NY (JFK)</option>
-                    <option value="2">Newark, NJ (EWR)</option>
-                    <option value="3">Queens, NY (LGA)</option>
-                    <option value="4">Philadelphia, PA (PHL)</option>
-                    <option value="5">Atlantic City, NJ (ACY)</option>
-                    <option value="6">Pittsburgh, PA (PIT)</option>
-                    <option value="7">Harrisburg, PA (MDT)</option>
-                    <option value="8">Hartford, CT (BDL)</option>
-                    <option value="9">Albany, NY (ALB)</option>
-                    <option value="10">Syracuse, NY (SYR)</option>
-                    <option value="11">Lehigh County, PA (ABE)</option>
+                  <select class="custom-select" id="ArrivalAirport" required>
+                    <option value="" name=0>Choose...</option>
+                    <option value="JFK" name="Queens">Queens, NY (JFK)</option>
+                    <option value="EWR" name="Newark">Newark, NJ (EWR)</option>
+                    <option value="PHL" name="Philadelphia">Philadelphia, PA (PHL)</option>
+                    <option value="ACY" name="Atlantic City">Atlantic City, NJ (ACY)</option>
+                    <option value="DCA" name="DC">Washington, DC (DCA)</option>
+					<option value="BOS" name="Boston">Boston, MA (BOS)</option>
+                    <option value="PIT" name="Pittsburgh">Pittsburgh, PA (PIT)</option>
+                    <option value="BDL" name="Hartford">Hartford, CT (BDL)</option>
+                    <option value="ALB" name="Albany">Albany, NY (ALB)</option>
                   </select>
-                  <div class="invalid-feedback">Please choose an airport.</div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Date of Departure</label>
-                  </div>
-                  <input type="text" class="form-control" placeholder="MM/DD/YYYY" required>
-                  <div class="invalid-feedback">Please enter a date.</div>
-                </div>
-                <small id="passwordHelpBlock" class="form-text text-muted">
-                  Your date of departure must be greater than or equal to today's date.
+                <small class="hide" id="err3" style="color:#fdb302">
+                  <b>Please provide a valid date.</b>
                 </small>
-              </div>
-              <div class="col">
-                <div class="input-group mb-3">
+                <div class="input-group mb-3" id=DD>
                   <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Date of Arrival</label>
+                    <label class="input-group-text" for="inputGroupSelect01">Depart</label>
                   </div>
-                  <input type="text" class="form-control" placeholder="MM/DD/YYYY" required>
-                  <div class="invalid-feedback">Please enter a date.</div>
+                  <input type="date" id="DepartureDate" min="" class="form-control" required>
                 </div>
               </div>
             </div>
-            <button class="btn btn-primary" type="submit">Submit</button>
-            <div class="list-group list-group-flush" onload="hide()" id="Flights">
-              <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
-              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+            <div class="row" id="Round">
+              <div class="col">
+                <small class="hide" id="err4" style="color:#fdb302">
+                  <b>Please provide a valid date.</b>
+                </small>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Arrive</label>
+                  </div>
+                  <input type="date" id="ReturnDate" min="" class="form-control" required>
+                </div>
+              </div>
             </div>
           </form>
-          <script> 
-            (hide())
-            // JavaScript for disabling form submissions if there are invalid fields
-            (function() {
-              'use strict';
-              window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                  form.addEventListener('submit', function(event) {
-                    if (form.checkValidity() === false) {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }
-                    else {
-                      var x = document.getElementById("Flights");
-                      x.style.display = "block";
-                    }
-                    form.classList.add('was-validated');
-                  }, false);
-                });
-              }, false);
-            })();
-          </script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        </body>
-        <footer>
-            <a href = "https://twitter.com/?lang=en"> <img alt = “Twitter” src = https://mobiledevmemo.com/wp-content/uploads/2014/05/Twitter-Bird.png height="23" width ="25"> </a>
-            <a href = "https://www.facebook.com/"> <img alt=”Facebook” src = https://2.bp.blogspot.com/-tvmgENfHanM/U-kriCleTNI/AAAAAAAABvs/Yb5VeHaIgPU/s1600/facebook+logo+vector.png height="25" width="25"> </a>
-            <p> COPYRIGHT 2019 by Fly High Airlines, Inc.</p>
-        </footer>
-    </main>
+		</div>
+<!--Submit button---------------------------->
+	    <div class="flight-container" style="position:relative; left:23.4vw; bottom: 2.5vh; z-index:300;">
+          <button type="submit" class="btn btn-dark"  onclick="submit()">S U B M I T</button>
+		</div>
+<!--Results message-------------------------->        
+		  <section id="selected">
+            <div id="message">
+            </div>
+          </section>
+<!--Flight options--------------------------->
+          <div>
+            <ul class="list-group list-group-flush" id="Flights">
+    <!--option 1----------------------------->
+			  <li class="list-group-item list-group-item-action" id="f1">
+                <div class="row">
+                  <div class="col" id="depTime1">
+                    <small class="text-muted" id="Air1">
+                    </small>
+                    <p id="Time1"></p>
+                  </div>
+                  <div class="col" id="flightDur1">
+                  </div>
+                  <div class="col" id="price1">
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-outline-info right" onclick="select1()" id="btn1">Select</button>
+                  </div>
+                </div>
+              </li>
+	<!--option 2----------------------------->
+              <li class="list-group-item list-group-item-action" id="f2">
+                <div class="row">
+                  <div class="col" id="depTime2">
+                    <small class="text-muted" id="Air2">
+                    </small>
+                    <p id="Time2">
+                  </div>
+                  <div class="col" id="flightDur2">
+                  </div>
+                  <div class="col" id="price2">
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-outline-info right" onclick="select2()" id="btn2">Select</button>
+                  </div>
+                </div>
+              </li>
+	<!--option 3----------------------------->
+              <li class="list-group-item list-group-item-action" id="f3">
+                <div class="row">
+                  <div class="col" id="depTime3">
+                    <small class="text-muted" id="Air3">
+                    </small>
+                    <p id="Time3"></p>
+                  </div>
+                  <div class="col" id="flightDur3">
+                  </div>
+                  <div class="col" id="price3">
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-outline-info right" onclick="select3()" id="btn3">Select</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+	  </div>
+<!--yourFlight------------------------------>
+	  <div class="yourFlight-container collapse" id="yourFlight" style="position:relative; margin-left:15vw; width:55vw; margin-top:-2.5vh; height:70vh;">
+		<div style="margin-left:-8vw; width:75vw; margin-top:0vh; height:62vh; border:gray">
+          <form class="needs-validation" style="position:absolute; margin-top:7vh; margin-left:8vw; margin-right:8vw" novalidate>
+  <!--info about yourFlight----------------->           
+		  <div id="flightInfo" style="margin-top:-7vh; width:55vw;">
+			<div class="row" style="background-color:#fdb302">
+			  <div class="col" id="InfoAir" style="color:white; font-size:3rem; font-weight:bold">""
+			  </div>
+			</div>
+			<div class="row" style="background-color:#fdb302">			
+			  <div id="InfoNum" class="col" style="color:white;">""
+			  </div>
+			</div>
+			<div class="row" style="background-color:#fdb302">
+			  <div class="col" id="InfoDate&Time" style="color:white; font-size:1.5rem">""
+			  </div>
+			</div>
+		  </div>
+		  <div id="flightReturnInfo" style="margin-top:-17.4vh; margin-left:28vw; width:26vw;">
+			<div class="row" style="background-color:#fdb302">
+			  <div class="col" id="ReturnInfoAir" style="color:white; font-size:3rem; font-weight:bold">""
+			  </div>
+			</div>
+			<div class="row" style="background-color:#fdb302">			
+			  <div id="ReturnInfoNum" class="col" style="color:white;">""
+			  </div>
+			</div>
+			<div class="row" style="background-color:#fdb302">
+			  <div class="col" id="ReturnInfoDate&Time" style="color:white; font-size:1.5rem">""
+			  </div>
+			</div>
+		  </div>
+  <!--personal info form--------------------->
+		  <div class="personalInfo" style="margin-top:3vh; width:55vw;">
+			<div class="row">
+			  <div class="col-md-4 mb-3">
+			    <label for="FirstName">First Name</label>
+			    <input type="text" class="form-control" id="FirstName" placeholder="First name" required>
+			  </div>
+			  <div class="col-md-4 mb-3">
+			    <label for="LastName">Last Name</label>
+			    <input type="text" class="form-control" id="LastName" placeholder="Last name" required>
+			  </div>
+            </div> 
+			<div class="row">
+			  <div class="col-md-4 mb-3">
+			    <label for="email">E-mail</label>
+			    <input type="text" class="form-control" id="email" placeholder="firstlast@gmail.com" required>
+			  </div>
+			  <div class="col-md-4 mb-3">
+			    <label for="phone">Phone Number</label>
+			    <input type="text" class="form-control" id="phone" placeholder="000-000-0000" required>
+			  </div>
+            </div>
+		  </div>
+          </form>
+		</div>
+<!--Submit button---------------------------->
+	    <div class="register" style="position:relative; left:23.1vw; bottom: 13vh; z-index:300;">
+          <button type="submit" class="btn btn-warning"  onclick="billing()">S U B M I T</button>
+		</div>
+	  </div>
+<!--billing/confirmation code---------------->
+      <div id="billing" class="collapse" style="position:relative; margin-left:15vw; width:55vw; margin-top:-2.5vh; height:73vh;">
+		<div style="margin-top:-7vhvh; width:55vw; height:40vh; background-color:#293147; color:white; text-align:center">
+		 <br><br><br>
+ 		  A confirmation code has been sent to your email. <br>
+		  Please enter the 5-digit code below to continue:
+		</div>
+		<form style="margin-top:-20vh; margin-left:20vw; width:15vw; z-index:200">
+		  <div class="form-group">
+		    <input type="text" class="form-control center" id="confirmation" placeholder="00000">
+		  </div>
+		  <button type="submit" class="btn btn-outline-light center">C O N F I R M</button>
+		</form>
+	  </div>
+<script>
+  var from = [];
+  var to = [];
+  var Rfrom = [];
+  var Rto = [];
+  var D;
+
+  function CurrentDate(){
+    $('#bookBox').collapse('show');
+	$('#yourFlight').collapse('hide');
+	$('#billing').collapse('hide');
+	
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+    if(dd<10) {
+      dd = '0'+dd;
+    }
+    if(mm<10) {
+      mm = '0'+mm;
+    }
+    var date = yyyy+'-'+mm+'-'+dd;
+    document.getElementById("DepartureDate").setAttribute("min", date);
+    document.getElementById("ReturnDate").setAttribute("min", date);
+  }
+
+  function roundTrip(){
+    if(document.getElementById("RoundTrip").checked)
+      document.getElementById("Round").style.display = "flex";
+    else
+      document.getElementById("Round").style.display = "none";
+  }
+
+  function submit(){
+    var depDate = document.getElementById("DepartureDate").value;
+    var arrDate = document.getElementById("ReturnDate").value;
+    var depAir = document.getElementById("DepartureAirport").value;
+    var arrAir = document.getElementById("ArrivalAirport").value;
+    var route = depAir+" to "+arrAir;
+    var back = arrAir+" to "+depAir;
+    var err1 = document.getElementById("err1");
+    var err2 = document.getElementById("err2");
+    var err3 = document.getElementById("err3");
+    var err4 = document.getElementById("err4");
+    if(depAir=="")
+      err1.style.visibility = "visible";
+    else
+      err1.style.visibility = "hidden";
+    if(arrAir==""||arrAir==depAir)
+      err2.style.visibility = "visible";
+    else
+      err2.style.visibility = "hidden";
+    if(depDate=="")
+      err3.style.visibility = "visible";
+    else
+      err3.style.visibility = "hidden";
+    if((document.getElementById("RoundTrip").checked&&arrDate=="")||(arrDate.split("-")[0]<=depDate.split("-")[0]&&arrDate.split("-")[1]<=depDate.split("-")[1])&&arrDate.split("-")[2]<=depDate.split("-")[2])
+      err4.style.visibility = "visible";
+    else
+      err4.style.visibility = "hidden";
+    if(err1.style.visibility == "hidden"&& err2.style.visibility == "hidden" && err3.style.visibility == "hidden" && err4.style.visibility == "hidden"){
+      document.getElementById("message").innerHTML = "Select your departure to "+ arrAir+":"; 
+	  document.getElementById("Air1").innerHTML = route;
+      document.getElementById("Air2").innerHTML = route;
+      document.getElementById("Air3").innerHTML = route;
+      var myTab = document.getElementById('FlightTable');
+      var j = 0;
+      for (i = 1; i < myTab.rows.length; i++) {
+        var objCells = myTab.rows.item(i).cells; 
+		if(objCells.item(0).innerHTML==depDate&&objCells.item(1).innerHTML==depAir&&objCells.item(2).innerHTML==arrAir){
+          j++;
+          from[j-1]= objCells.item(3).innerHTML;
+          to[j-1] = objCells.item(4).innerHTML;
+          var entry = document.getElementById("Time"+j);
+          entry.innerHTML = from[j-1]+"-"+to[j-1];
+          document.getElementById("f"+j).style.display="block";
+          var depHr = from[j-1].split(":")[0];
+          var depMin = from[j-1].split(":")[1];
+          var arrHr = to[i-1].split(":")[0];
+          var arrMin = to[i-1].split(":")[1];
+          var elapsedMin = arrMin-depMin;
+          if(elapsedMin<0){
+            elapsedMin+=60;
+            depHr++;
+          }
+          var elapsedTime = (arrHr-depHr)+"h"+elapsedMin+"m";
+          document.getElementById("flightDur"+i).innerHTML = elapsedTime;
+          var priceRatio = (arrHr-depHr)*60+elapsedMin;
+          var price = "$"+Math.trunc(priceRatio*100)/100;
+          document.getElementById("price"+i).innerHTML= price;
+        }
+      }
+      if(j==0){
+        document.getElementById("message").innerHTML = "Sorry! There are no flights on "+depDate+" from "+depAir+" to "+arrAir+".";
+        document.getElementById("Flights").style.display = "none";
+      }
+    }
+  }
+
+  function select1(){
+    var numpass = document.getElementById("NumPass").value;
+    var depDate = document.getElementById("DepartureDate").value;
+    var arrDate = document.getElementById("ReturnDate").value;
+    var depAir = document.getElementById("DepartureAirport").value;
+    var arrAir = document.getElementById("ArrivalAirport").value;
+  // if return flight already selected
+    if(document.getElementById("message").innerHTML == "Select your return to "+depAir +":"){
+      document.getElementById("InfoAir").innerHTML = depAir+" - "+arrAir;
+	  document.getElementById("InfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("InfoDate&Time").innerHTML = depDate+": \u00A0\u00A0\u00A0"+from[D]+"-"+to[D];
+      document.getElementById("ReturnInfoAir").innerHTML = arrAir+" - "+depAir;
+	  document.getElementById("ReturnInfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("ReturnInfoDate&Time").innerHTML = arrDate+": \u00A0\u00A0\u00A0"+Rfrom[0]+"-"+Rto[0];
+	  $('#bookBox').collapse('hide');
+	  $('#billing').collapse('hide');
+	  $('#yourFlight').collapse('show');
+    }
+  // to check if it's a round-trip
+    else if(document.getElementById("RoundTrip").checked){
+      var back = arrAir+" to "+depAir;
+  //save selected time
+      D=0;
+      document.getElementById("message").innerHTML = "Select your return to "+depAir +":";
+      document.getElementById("f1").style.display ="none";
+      document.getElementById("f2").style.display ="none";
+      document.getElementById("f3").style.display ="none";
+      document.getElementById("Air1").innerHTML = back;
+      document.getElementById("Air2").innerHTML = back;
+	  document.getElementById("Air3").innerHTML = back;
+      var myTab = document.getElementById('FlightTable');          
+      var j = 0;  
+      for (i = 1; i < myTab.rows.length; i++) {
+        var objCells = myTab.rows.item(i).cells;
+        if(((objCells.item(0).innerHTML==arrDate) && (objCells.item(1).innerHTML==arrAir)) && (objCells.item(2).innerHTML==depAir)){
+          j++;
+          Rfrom[j-1] = objCells.item(3).innerHTML;
+          Rto[j-1] = objCells.item(4).innerHTML;
+          document.getElementById("Time"+j).innerHTML = Rfrom[j-1]+"-"+Rto[j-1];
+          document.getElementById("f"+j).style.display = "block";
+  // calculate the flight duration
+          var depHr = Rfrom[j-1].split(":")[0];
+          var depMin = Rfrom[j-1].split(":")[1];
+          var arrHr = Rto[j-1].split(":")[0];
+          var arrMin = Rto[j-1].split(":")[1];
+          var elapsedMin = arrMin-depMin;
+          if(elapsedMin<0){
+            elapsedMin += 60;
+            depHr++;
+          }
+          var elapsedTime = (arrHr-depHr) + "h" + elapsedMin + "m";
+          document.getElementById("flightDur"+j).innerHTML = elapsedTime;
+          var priceRatio = (arrHr-depHr)*60 + elapsedMin;
+          document.getElementById("price"+j).innerHTML= "+$0";
+        }
+      }
+      if(j==0){
+        document.getElementById("message").innerHTML = "Sorry! There are no flights on "+arrDate+" from "+arrAir+" to "+depAir+".";
+        document.getElementById("Flights").style.display = "none";
+      }
+    }
+  // one-way
+    else {
+	  document.getElementById("InfoAir").innerHTML = depAir+" - "+arrAir;
+	  document.getElementById("InfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("InfoDate&Time").innerHTML = depDate+": \u00A0\u00A0\u00A0"+from[0]+"-"+to[0];
+      $('#bookBox').collapse('hide');
+	  $('#billing').collapse('hide');
+	  $('#yourFlight').collapse('show');
+    }
+  }
+
+  function select2(){
+    var numpass = document.getElementById("NumPass").value;
+    var depDate = document.getElementById("DepartureDate").value;
+    var arrDate = document.getElementById("ReturnDate").value;
+    var depAir = document.getElementById("DepartureAirport").value;
+    var arrAir = document.getElementById("ArrivalAirport").value;
+  // if return flight already selected
+    if(document.getElementById("message").innerHTML == "Select your return to "+depAir +":"){
+      document.getElementById("InfoAir").innerHTML = depAir+" - "+arrAir;
+	  document.getElementById("InfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("InfoDate&Time").innerHTML = depDate+": \u00A0\u00A0\u00A0"+from[D]+"-"+to[D];
+      document.getElementById("ReturnInfoAir").innerHTML = arrAir+" - "+depAir;
+	  document.getElementById("ReturnInfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("ReturnInfoDate&Time").innerHTML = arrDate+": \u00A0\u00A0\u00A0"+Rfrom[1]+"-"+Rto[1];
+	  $('#bookBox').collapse('hide');
+	  $('#billing').collapse('hide');
+	  $('#yourFlight').collapse('show');
+    }
+  // to check if it's a round-trip
+    else if(document.getElementById("RoundTrip").checked){
+      var back = arrAir+" to "+depAir;
+  //save selected time
+      D=1;
+      document.getElementById("message").innerHTML = "Select your return to "+depAir +":";
+      document.getElementById("f1").style.display ="none";
+      document.getElementById("f2").style.display ="none";
+      document.getElementById("f3").style.display ="none";
+      document.getElementById("Air1").innerHTML = back;
+      document.getElementById("Air2").innerHTML = back;
+      document.getElementById("Air3").innerHTML = back;
+      var myTab = document.getElementById('FlightTable');          
+      var j = 0;  
+      for (i = 1; i < myTab.rows.length; i++) {
+        var objCells = myTab.rows.item(i).cells;
+        if(((objCells.item(0).innerHTML==arrDate) && (objCells.item(1).innerHTML==arrAir)) && (objCells.item(2).innerHTML==depAir)){
+          j++;
+          Rfrom[j-1] = objCells.item(3).innerHTML;
+          Rto[j-1] = objCells.item(4).innerHTML;
+          document.getElementById("Time"+j).innerHTML = Rfrom[j-1]+"-"+Rto[j-1];
+          document.getElementById("f"+j).style.display = "block";
+  // calculate the flight duration
+          var depHr = Rfrom[j-1].split(":")[0];
+          var depMin = Rfrom[j-1].split(":")[1];
+          var arrHr = Rto[j-1].split(":")[0];
+          var arrMin = Rto[j-1].split(":")[1];
+          var elapsedMin = arrMin-depMin;
+          if(elapsedMin<0){
+            elapsedMin += 60;
+            depHr++;
+          }
+          var elapsedTime = (arrHr-depHr) + "h" + elapsedMin + "m";
+          document.getElementById("flightDur"+j).innerHTML = elapsedTime;
+          var priceRatio = (arrHr-depHr)*60 + elapsedMin;
+          document.getElementById("price"+j).innerHTML= "+$0";
+        }
+      }
+      if(j==0){
+        document.getElementById("message").innerHTML = "Sorry! There are no flights on "+arrDate+" from "+arrAir+" to "+depAir+".";
+        document.getElementById("Flights").style.display = "none";
+      }
+    }
+  // one-way
+    else {
+      document.getElementById("InfoAir").innerHTML = depAir+" - "+arrAir;
+	  document.getElementById("InfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("InfoDate&Time").innerHTML = depDate+": \u00A0\u00A0\u00A0"+from[1]+"-"+to[1];
+      $('#bookBox').collapse('hide');
+	  $('#billing').collapse('hide');
+	  $('#yourFlight').collapse('show');
+    }
+  }
+
+  function select3(){
+    var numpass = document.getElementById("NumPass").value;
+    var depDate = document.getElementById("DepartureDate").value;
+    var arrDate = document.getElementById("ReturnDate").value;
+    var depAir = document.getElementById("DepartureAirport").value;
+    var arrAir = document.getElementById("ArrivalAirport").value;
+  // if return flight already selected
+    if(document.getElementById("message").innerHTML =="Select your return to "+depAir +":"){
+      document.getElementById("InfoAir").innerHTML = depAir+" - "+arrAir;
+	  document.getElementById("InfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("InfoDate&Time").innerHTML = depDate+": \u00A0\u00A0\u00A0"+from[D]+"-"+to[D];
+      document.getElementById("ReturnInfoAir").innerHTML = depAir+" - "+arrAir;
+	  document.getElementById("ReturnInfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("ReturnInfoDate&Time").innerHTML = arrDate+": \u00A0\u00A0\u00A0"+Rfrom[2]+"-"+Rto[2];
+	  $('#bookBox').collapse('hide');
+	  $('#billing').collapse('hide');
+	  $('#yourFlight').collapse('show');
+    }
+  // to check if it's a round-trip
+      else if(document.getElementById("RoundTrip").checked){
+        var back = arrAir+" to "+depAir;
+  //save selected time
+      D=2;
+      document.getElementById("message").innerHTML = "Select your return to "+depAir +":";
+      document.getElementById("f1").style.display ="none";
+      document.getElementById("f2").style.display ="none";
+      document.getElementById("f3").style.display ="none";
+      document.getElementById("Air1").innerHTML = back;
+      document.getElementById("Air2").innerHTML = back;
+      document.getElementById("Air3").innerHTML = back;
+      var myTab = document.getElementById('FlightTable');          
+      var j = 0;  
+      for (i = 1; i < myTab.rows.length; i++) {
+        var objCells = myTab.rows.item(i).cells;
+        if(((objCells.item(0).innerHTML==arrDate) && (objCells.item(1).innerHTML==arrAir)) && (objCells.item(2).innerHTML==depAir)){
+          j++;
+          Rfrom[j-1] = objCells.item(3).innerHTML;
+          Rto[j-1] = objCells.item(4).innerHTML;
+          document.getElementById("Time"+j).innerHTML = Rfrom[j-1]+"-"+Rto[j-1];
+          document.getElementById("f"+j).style.display = "block";
+  // calculate the flight duration
+          var depHr = Rfrom[j-1].split(":")[0];
+          var depMin = Rfrom[j-1].split(":")[1];
+          var arrHr = Rto[j-1].split(":")[0];
+          var arrMin = Rto[j-1].split(":")[1];
+          var elapsedMin = arrMin-depMin;
+          if(elapsedMin<0){
+            elapsedMin += 60;
+            depHr++;
+          }
+          var elapsedTime = (arrHr-depHr) + "h" + elapsedMin + "m";
+          document.getElementById("flightDur"+j).innerHTML = elapsedTime;
+          var priceRatio = (arrHr-depHr)*60 + elapsedMin;
+          document.getElementById("price"+j).innerHTML= "+$0";
+        }
+      }
+      if(j==0){
+        document.getElementById("message").innerHTML = "Sorry! There are no flights on "+arrDate+" from "+arrAir+" to "+depAir+".";
+        document.getElementById("Flights").style.display = "none";
+      }
+    }
+  // one-way
+    else {
+      document.getElementById("InfoAir").innerHTML = depAir+" - "+arrAir;
+	  document.getElementById("InfoNum").innerHTML = numpass+" SEATS";
+	  document.getElementById("InfoDate&Time").innerHTML = depDate+": \u00A0\u00A0\u00A0"+from[2]+"-"+to[2];
+      $('#bookBox').collapse('hide');
+	  $('#billing').collapse('hide');
+	  $('#yourFlight').collapse('show');
+    }
+  }
+  
+  function billing(){
+    $('#bookBox').collapse('hide');
+	$('#yourFlight').collapse('hide');
+	$('#billing').collapse('show');
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<footer style="position:absolute; top:160vh">
+    <a href = "https://twitter.com/?lang=en"> <img alt = “Twitter” src = https://mobiledevmemo.com/wp-content/uploads/2014/05/Twitter-Bird.png height="23" width ="25"> </a>
+    <a href = "https://www.facebook.com/"> <img alt=”Facebook” src = https://2.bp.blogspot.com/-tvmgENfHanM/U-kriCleTNI/AAAAAAAABvs/Yb5VeHaIgPU/s1600/facebook+logo+vector.png height="25" width="25"> </a>
+    <p> COPYRIGHT 2020 by Fly High Airlines, Inc.</p>
+</footer>
+</main>
 </html>
