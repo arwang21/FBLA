@@ -11,6 +11,8 @@ Made for FBLA 2020, Website Design.
  
 ## General info
 Fly High Airlines is a new discount airline serving the Northeastern area. Use our website to check flight schedules, book flights, learn about our frequent flyer program, and even apply for a job with the airline! Links to our social media pages are also included.
+
+## Screenshots
  
 ## Technologies
 * HTML - version 5.0
