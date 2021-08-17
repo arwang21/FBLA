@@ -13,10 +13,10 @@ Made for FBLA 2020, Website Design.
 Fly High Airlines is a new discount airline serving the Northeastern area. Use our website to check flight schedules, book flights, learn about our frequent flyer program, and even apply for a job with the airline! Links to our social media pages are also included.
 
 ## Screenshots
-![alt text](https://github.com/arwang21/FBLA/pp1.png?raw=true)
-![alt text](https://github.com/arwang21/FBLA/pp2.png?raw=true)
-![alt text](https://github.com/arwang21/FBLA/pp3.png?raw=true)
-![alt text](https://github.com/arwang21/FBLA/pp4.png?raw=true)
+![alt text](https://github.com/arwang21/FBLA/blob/main/pp1.png?raw=true)
+![alt text](https://github.com/arwang21/FBLA/blob/main/pp2.png?raw=true)
+![alt text](https://github.com/arwang21/FBLA/blob/main/pp3.png?raw=true)
+![alt text](https://github.com/arwang21/FBLA/blob/main/pp4.png?raw=true)
 
 ## Video Demo
 Please refer to 'NLEsubmission.mp4' 
